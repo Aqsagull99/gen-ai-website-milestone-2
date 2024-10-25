@@ -1,0 +1,83 @@
+/* header */
+
+ .header {
+  position: relative;
+  backdrop-filter: blur(10px) contrast(200%);
+  border: 2px solid white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+  z-index: 100;
+}
+
+.logo {
+  height: 60px;
+  width: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/Ai-logo.png');
+  z-index: 200; 
+}
+
+.menuToggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 300; 
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  z-index: 50;
+}
+
+.navList li {
+  margin: 0 1.5rem;
+}
+
+.navList li a {
+  color: white !important;
+  text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+  .navList {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);  
+    z-index: 50;
+  }
+
+  .navList.active {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 200; 
+  }
+}   
+
+
+ 

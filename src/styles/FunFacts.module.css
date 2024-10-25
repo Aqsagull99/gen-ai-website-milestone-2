@@ -1,0 +1,45 @@
+.funFactsSection {
+    padding: 40px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; 
+    backdrop-filter: blur(40px) contrast(200%);
+    border: 2px solid white;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: white; 
+    margin-bottom: 20px; 
+}
+
+.factsContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.factCard {
+   
+    backdrop-filter: blur(5px) contrast(200%);
+    padding: 15px; 
+    margin: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    text-align: center; 
+    border: 2px solid white;
+    transition: color 0.3s ease, transform 0.5s ease; 
+   
+}
+
+.factText {
+    font-size: 1rem; 
+    color: white
+}
+
+.factCard:hover{
+    transform: scale(1.05); 
+}
+ 

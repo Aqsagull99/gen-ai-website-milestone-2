@@ -1,0 +1,56 @@
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 50px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.title {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: white;
+    text-align: center; 
+    text-decoration: underline;
+}
+
+/* Video container */
+.video {
+    width: 100%; 
+    max-width: 800px; 
+    height: 450px; 
+    border: none; 
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .video {
+        height: 300px; 
+        max-width: 100%; 
+    }
+
+    .title {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .video {
+        height: 200px; 
+        max-width: 100%; 
+    }
+
+    .title {
+        font-size: 1.2rem; 
+    }
+
+    .videoContainer {
+        padding: 10px; 
+        margin: 20px 0; 
+        border-radius: 30px; 
+    }
+}
